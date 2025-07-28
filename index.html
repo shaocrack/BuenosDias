@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Buenos Días, Amor!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <audio id="audioOjos" src="ojos.mp3" autoplay loop></audio>
+    <audio id="audioOjos" src="ojos.mp3" loop></audio>
     <div class="container">
         <div class="entrada" id="entrada">
             <h1> Buenos días :D </h1>
@@ -46,12 +49,15 @@
     </div>
     <script src="script.js"></script>
     <script>
-      // Reproducir la canción automáticamente al cargar la página
-      window.addEventListener('DOMContentLoaded', function() {
+      // Reproducir la canción al hacer clic en Entrar
+      document.addEventListener('DOMContentLoaded', function() {
         const audio = document.getElementById('audioOjos');
-        if (audio) {
+        const btn = document.getElementById('entrarBtn');
+        if (audio && btn) {
           audio.volume = 0.7;
-          audio.play().catch(()=>{}); // Algunos navegadores requieren interacción
+          btn.addEventListener('click', function() {
+            audio.play().catch(()=>{});
+          });
         }
       });
     </script>
