@@ -43,7 +43,7 @@ body {
     padding: 0;
     min-height: 100vh;
     background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-    font-family: 'Quicksand', 'Segoe UI', cursive, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
