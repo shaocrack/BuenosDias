@@ -11,13 +11,13 @@ const preguntaFinal = document.getElementById('preguntaFinal');
 const mensajesMotivacionales = [
     "Ten un buen inicio de semana :D",
     "y brilla como vestido de teibolera xD",
-    "Recuerda: cruzar la calle viendo a los 2 lados, toma aguita",
-    "y comerás bien y si no tienes, ahí me envías un mensaje, ahí tengo 1$ en la cuenta mal parqueada para ti :D"
+    "Recuerda: cruza la calle mirando a ambos lados… y toma agüita",
+    "Y comerás bien saludable. Y si no tienes para comer, me mandas un mensaje… ahí tengo $1 mal parqueado en la cuenta, para ti :D"
 ];
 
 const mensajesIntento = [
     "¡Uy! No fue a la primera, pero aún puedes ganar el reto o los 2 dólares...",
-    "¡Casi! Si le atinas ahora, me debes el reto final jaja",
+    "¡Casi! Si le atinas ahora, me debes el reto final jaja, presiona el ultimo foco jaja",
     "¡Ahora sí, este es el intento decisivo!"
 ];
 

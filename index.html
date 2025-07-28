@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <audio id="audioOjos" src="ojos.mp3" autoplay loop></audio>
     <div class="container">
         <div class="entrada" id="entrada">
             <h1> Buenos días :D </h1>
@@ -34,12 +35,25 @@
             <div class="preguntaFinal oculto" id="preguntaFinal">
                 <h3>Reto 😊</h3>
                 <p>Si te sientes bonita, sonríe :D</p>
+                <p> y si no te sientes bonita, tambien sonríe! jaja</p>
+                
                 <p>Y si sonreíste, me debes enviar una foto de cualquier cosa que diga Jimmycito te quiero <3 ... ¡o si es de tu carita no me enojo xD!</p>
-                <p style="font-weight:bold; color:#ff6f91;">Jimmy te quiere :D</p>
-                <p style="margin-top:20px; font-size:1.1em;">Jajajaja ¡BUEN INICIO DE SEMANA, HERMOSA!</p>
+               
+                <p style="margin-top:20px; font-size:1.1em;">Jajajaja ¡BUEN INICIO DE SEMANA BELLA!</p>
+                <p style="margin-top:25px; font-size:1.15em; color:#2d8cff; font-weight:bold;">No te he visto, pero sé que estás hermosa :D</p>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+      // Reproducir la canción automáticamente al cargar la página
+      window.addEventListener('DOMContentLoaded', function() {
+        const audio = document.getElementById('audioOjos');
+        if (audio) {
+          audio.volume = 0.7;
+          audio.play().catch(()=>{}); // Algunos navegadores requieren interacción
+        }
+      });
+    </script>
 </body>
 </html>
